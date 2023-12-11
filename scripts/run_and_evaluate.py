@@ -96,7 +96,7 @@ def run_and_evaluate():
 
         if conversations_completed % int(os.environ["RESET_AGENT_AFTER_X_CONVERSATIONS"]) == 0:
             # reset the agent
-            agent = Agent.load(training_result.model, endpoints=AvailableEndpoints.read_endpoints("endpoints.yml"))
+            agent = Agent.load(training_result.model, endpoints=endpoints, action_endpoint=endpoints.action)
 
     write_summary_to_file(results)
 
