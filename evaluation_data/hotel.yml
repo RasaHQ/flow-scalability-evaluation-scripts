@@ -1,3 +1,32 @@
+# Book hotel ------------------------------------------------------------------------
+
+- conversation:
+    flows:
+        - book_hotel
+    user_utterances:
+        - "I want to book a stay at the Grandeur Hotel."
+        - "Check-in on May 10th and check-out on May 15th."
+        - "We need an apartment."
+        - "It's for two people."
+        - "Yes, please go ahead and book it."
+
+- conversation:
+    flows:
+        - book_hotel
+    user_utterances:
+        - "Book a room at Ocean View Resort for next weekend."
+        - "Just for one night."
+        - "A single room would be fine. It's just me."
+        - "Confirm the booking."
+
+- conversation:
+    flows:
+        - book_hotel
+    user_utterances:
+        - "I need a family apartment at the Safari Lodge from July 22nd to July 27th"
+        - "Four of us."
+        - "Please confirm the booking."
+
 # Cancel hotel ---------------------------------------------------------------------
 
 - conversation:
