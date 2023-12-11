@@ -1,0 +1,12 @@
+flows:
+  cancel_airbnb:
+    description: |
+      Canceling a previously booked airbnb accommodation.
+    name: cancel airbnb
+
+    steps:
+      - collect: order_number
+        description: the reservation number used to identify users hotel booking.
+      - collect: cancellation_reason
+        description: the reason of the cancellation
+      - link: process_refund

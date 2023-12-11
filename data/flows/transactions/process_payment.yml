@@ -1,0 +1,12 @@
+flows:
+  process_payment:
+    description: |
+      Handle money transactions for booking services, including presenting the total
+      cost, collecting payment details, and processing the payment securely.
+    name: process payment
+
+    steps:
+      - collect: process_payment_method
+        description: various payment options
+
+      - collect: process_payment_confirmation

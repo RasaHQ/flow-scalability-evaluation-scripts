@@ -1,0 +1,9 @@
+flows:
+  change_travel_package:
+    description: The user wants to change his travel package, i.e. change hotel, modify dates.
+    name: change travel package
+    steps:
+      - collect: order_number
+        description: the order number of the booked travel package
+      - collect: travel_package_update
+        description: collects what the user actually wants to update

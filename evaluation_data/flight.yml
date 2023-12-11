@@ -1,0 +1,126 @@
+# Book flight -----------------------------------------------------------------------
+
+- conversation:
+    flows:
+        - book_flight_ticket
+    user_utterances:
+        - "I need to book a flight."
+        - "From Los Angeles."
+        - "Heading to New York."
+        - "Departing on October 12th and returning on October 17th."
+        - "Economy class, please."
+        - "Yes, direct flights only."
+        - "Yes"
+
+- conversation:
+    flows:
+        - book_flight_ticket
+    user_utterances:
+        - "I need to book a flight from LA to NY."
+        - "Departing on October 10th and returning on October 15th."
+        - "Which class would you like to travel in?"
+        - "Economy class, and make it a direct flight."
+
+- conversation:
+    flows:
+        - book_flight_ticket
+    user_utterances:
+        - "I want to book a round-trip flight from Los Angeles to New York."
+        - "Leaving on October 10th and returning on October 15th."
+
+- conversation:
+    flows:
+        - book_flight_ticket
+    user_utterances:
+        - "Book a round-trip from Los Angeles to New York in economy class. Direct flights only."
+        - "Departure on October 10th and return on October 15th."
+        - "Yes"
+
+- conversation:
+    flows:
+        - book_flight_ticket
+    user_utterances:
+        - "Please book a round-trip flight in economy from Los Angeles to New York, departing October 10th and returning October 15th."
+        - "Yes"
+
+# Cancel flight ---------------------------------------------------------------------
+
+- conversation:
+    flows:
+        - cancel_flight
+    user_utterances:
+        - "I want to cancel the flight I booked and get refund."
+        - "Ticket number ABC456."
+        - "I have a cold, I can't make it."
+
+- conversation:
+    flows:
+        - cancel_flight
+    user_utterances:
+        - "Please cancel my flight to Bucharest, I cannot go anymore."
+
+- conversation:
+    flows:
+        - cancel_flight
+    user_utterances:
+        - "I'm sick. I cannot go to the airport on Wednesday."
+
+# List booked flights ---------------------------------------------------------------
+
+- conversation:
+    flows:
+        - list_booked_flight_tickets
+    user_utterances:
+        - "List all the flight tickets I previously bought"
+
+- conversation:
+    flows:
+        - list_booked_flight_tickets
+    user_utterances:
+        - "Show me my previous flights"
+
+- conversation:
+    flows:
+        - list_booked_flight_tickets
+    user_utterances:
+        - "Where did I fly to?"
+
+# Show flight amenities info --------------------------------------------------------
+
+- conversation:
+    flows:
+        - show_flight_amenities
+    user_utterances:
+        - "What flight amenities are provided by Lufthansa on long direct flights from New York to Berlin?"
+
+- conversation:
+    flows:
+        - show_flight_amenities
+    user_utterances:
+        - "Can you list the in-flight amenities for Emirates flights from Dubai to London?"
+
+- conversation:
+    flows:
+        - show_flight_amenities
+    user_utterances:
+        - "What amenities does Delta offer on their transatlantic flights, like from Atlanta to Paris?"
+
+# Show flight luggage info ----------------------------------------------------------
+
+- conversation:
+    flows:
+        - show_flight_luggage_info
+    user_utterances:
+        - "WizzAir luggage restrictions"
+
+- conversation:
+    flows:
+        - show_flight_luggage_info
+    user_utterances:
+        - "What are restrictions when it comes to luggage when flying with RyanAir?"
+
+- conversation:
+    flows:
+        - show_flight_luggage_info
+    user_utterances:
+        - "Are there any luggage restrictions?"

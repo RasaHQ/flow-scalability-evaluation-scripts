@@ -1,0 +1,192 @@
+# Rent a car ------------------------------------------------------------------------
+
+- conversation:
+    flows:
+      - rent_a_car
+    user_utterances:
+        - "I need a car."
+        - "New York."
+        - "I'd prefer Enterprise."
+        - "On April 5th."
+        - "I'll return it on April 10th."
+        - "An SUV, please."
+        - "Yes, it's John Smith."
+
+- conversation:
+    flows:
+      - rent_a_car
+    user_utterances:
+        - "I want to rent a family van between March 3rd and March 10th."
+        - "Hamburg"
+        - "Hamburg Rent-a-car"
+        - "The driver will be Mary Lu."
+
+- conversation:
+    flows:
+        - rent_a_car
+    user_utterances:
+        - "A large car please for the weekend in Zurich."
+        - "Doesn't matter, pick whatever"
+        - "Joe Joe"
+
+- conversation:
+    flows:
+      - rent_a_car
+    user_utterances:
+        - "I'll need a compact car in Chicago next week."
+
+- conversation:
+    flows:
+      - rent_a_car
+    user_utterances:
+        - "Book me a sedan in Miami for my business trip."
+
+# Cancel car rental -----------------------------------------------------------------
+
+- conversation:
+    flows:
+        - cancel_car_rental
+    user_utterances:
+        - "I want to cancel the car I rent."
+        - "ABC1234"
+        - "I changed my mind."
+
+- conversation:
+    flows:
+        - cancel_car_rental
+    user_utterances:
+        - "Cancel the car rental order: ABC123. The trip is canceled."
+
+- conversation:
+    flows:
+        - cancel_car_rental
+    user_utterances:
+        - "I don't need the car anymore. Cancel the order."
+
+# Change car rental -----------------------------------------------------------------
+
+- conversation:
+    flows:
+        - change_car_rental
+    user_utterances:
+        - "I want to change the car rental booking"
+        - "ABC4567"
+        - "Car type"
+
+- conversation:
+    flows:
+        - change_car_rental
+    user_utterances:
+        - "I need to update my car rental."
+
+- conversation:
+    flows:
+        - change_car_rental
+    user_utterances:
+        - "Can I change my car rental please?"
+
+- conversation:
+    flows:
+        - change_car_rental
+    user_utterances:
+        - "I need to pick up the car in Berlin not in Potsdam. Please update."
+
+- conversation:
+    flows:
+        - change_car_rental
+    user_utterances:
+        - "I want to change the car I have booked for renting."
+        - "ABC123"
+        - "Large car"
+        - "Yes"
+
+- conversation:
+    flows:
+        - change_car_rental
+    user_utterances:
+        - "I need a bigger car for my order ORDER1234"
+
+# List car rental companies ---------------------------------------------------------
+
+- conversation:
+    flows:
+        - list_car_rental_companies
+    user_utterances:
+        - "Show me rent-a-cars available in Potsdam."
+
+- conversation:
+    flows:
+        - list_car_rental_companies
+    user_utterances:
+        - "What car rental companies are available."
+        - "Potsdam"
+
+- conversation:
+    flows:
+        - list_rental_vehicles
+    user_utterances:
+        - "What vehicles are available for renting?"
+        - "BerlinCar"
+        - "Berlin"
+
+# Show car company review -----------------------------------------------------------
+
+- conversation:
+    flows:
+        - show_car_rental_company_review
+    user_utterances:
+        - "How is Enterprise car rental reviewed?"
+        - "New York"
+
+- conversation:
+    flows:
+        - show_car_rental_company_review
+    user_utterances:
+        - "What do reviews say about the DT-Cars, New York?"
+
+- conversation:
+    flows:
+        - show_car_rental_company_review
+    user_utterances:
+        - "Can you show me reviews for Hertz rent-a-car in Los Angeles?"
+
+# Car rental company policies -------------------------------------------------------
+
+- conversation:
+    flows:
+        - show_car_rental_company_policies
+    user_utterances:
+        - "What are some polices of car rental companies in Berlin to be beware of?"
+        - "DT Cars"
+
+- conversation:
+    flows:
+        - show_car_rental_company_policies
+    user_utterances:
+        - "Looking for information on insurance and deposit requirements policies of car rentals in Potsdam"
+
+- conversation:
+    flows:
+        - show_car_rental_company_policies
+    user_utterances:
+        - "I need to know the policies of Avis car rentals in Miami."
+
+# List car rental bookings ----------------------------------------------------------
+
+- conversation:
+    flows:
+        - list_booked_car_rentals
+    user_utterances:
+        - "List all of my previous car rentals"
+
+- conversation:
+    flows:
+        - list_booked_car_rentals
+    user_utterances:
+        - "Can you show me a summary of my car rental bookings?"
+
+- conversation:
+    flows:
+        - list_booked_car_rentals
+    user_utterances:
+        - "I'd like to see all the cars I've rented."

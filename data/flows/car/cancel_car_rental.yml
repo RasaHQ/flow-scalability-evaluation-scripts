@@ -1,0 +1,10 @@
+flows:
+  cancel_car_rental:
+    description: Cancel the car rental and get a refund.
+    name: cancel car rental
+    steps:
+      - collect: order_number
+        description: the order number of the booked car rental
+      - collect: cancellation_reason
+        description: the reason of the cancellation
+      - link: process_refund

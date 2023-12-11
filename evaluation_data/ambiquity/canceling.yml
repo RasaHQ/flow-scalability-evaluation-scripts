@@ -1,0 +1,28 @@
+- conversation:
+    flows:
+      - cancel_bus_ticket
+      - cancel_train_ticket
+      - cancel_flight
+      - cancel_travel_package
+    user_utterances:
+      - "I need to cancel my trip."
+
+
+- conversation:
+    flows:
+      - cancel_bus_ticket
+      - cancel_train_ticket
+      - cancel_flight
+      - cancel_travel_package
+    user_utterances:
+      - "I got sick, will not be able to get on my trip this Monday."
+
+- conversation:
+    flows:
+      - cancel_bus_ticket
+      - cancel_train_ticket
+      - cancel_flight
+      - cancel_travel_package
+      - cancel_car_rental
+    user_utterances:
+      - "I'm not traveling tomorrow, cancel my transport"

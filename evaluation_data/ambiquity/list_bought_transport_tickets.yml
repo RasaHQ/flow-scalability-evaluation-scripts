@@ -1,0 +1,24 @@
+- conversation:
+    flows:
+      - list_booked_bus_tickets
+      - list_booked_train_tickets
+      - list_booked_flight_tickets
+    user_utterances:
+      - "Can you show me the tickets I've purchased for my trip next month?"
+
+- conversation:
+    flows:
+      - list_booked_bus_tickets
+      - list_booked_train_tickets
+      - list_booked_flight_tickets
+    user_utterances:
+      - "I need to see all my transport tickets."
+
+- conversation:
+    flows:
+      - list_booked_bus_tickets
+      - list_booked_train_tickets
+      - list_booked_flight_tickets
+      - list_booked_car_rentals
+    user_utterances:
+      - "Could you list all the transport arrangements for my journey to Europe?"

@@ -1,0 +1,15 @@
+flows:
+  book_a_travel_package:
+    description: The user wants to book a flight/train/bus together with a hotel.
+    name: book a travel package
+    steps:
+      - collect: travel_package_departure
+        description: the city the user is departing from
+      - collect: travel_package_arrival
+        description: the city the user wants to stay
+      - collect: travel_package_start_date
+        description: the start date of the trip
+      - collect: travel_package_end_date
+        description: the end date of the trip
+      - collect: travel_package_preferred_transport_method
+        description: the users preferred transport method

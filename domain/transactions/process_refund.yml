@@ -1,0 +1,28 @@
+version: "3.1"
+
+slots:
+
+  process_refund_booking_id:
+    type: text
+
+  process_refund_method:
+    type: categorical
+    values:
+      - paypal
+      - transfer
+      - credit card
+
+responses:
+  utter_ask_process_refund_booking_id:
+    - text: "Can you tell me your booking id?"
+  utter_ask_process_refund_method:
+    - text: "What refund method do you prefer?"
+      buttons:
+        - payload: "paypal"
+          title: paypal
+        - payload: "transfer"
+          title: transfer
+        - payload: "train"
+          title: train
+        - payload: "credit_card"
+          title: credit card

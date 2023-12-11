@@ -1,0 +1,11 @@
+flows:
+  show_flight_amenities:
+    description: |
+      Show amenities that the flight company provides during flight on their 
+      airplanes.
+    name: show flight amenities
+    steps:
+      - collect: flight_company
+        description: the flying company user is flying with
+      - collect: flight_departure_location
+        description: departure city or airport for the flight.

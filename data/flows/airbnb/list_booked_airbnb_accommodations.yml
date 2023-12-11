@@ -1,0 +1,7 @@
+flows:
+  list_booked_airbnb_accommodations:
+    description: |
+      List all airbnb accommodations user booked.
+    name: list booked airbnb accommodations
+    steps:
+      - action: utter_list_booked_airbnb_accommodations

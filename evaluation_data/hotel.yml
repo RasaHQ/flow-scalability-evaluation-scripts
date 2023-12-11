@@ -1,0 +1,84 @@
+# Cancel hotel ---------------------------------------------------------------------
+
+- conversation:
+    flows:
+        - cancel_hotel
+    user_utterances:
+        - "I need to cancel my hotel booking."
+        - "The reservation number is AB9876."
+        - "My travel plans have changed."
+
+- conversation:
+    flows:
+        - cancel_hotel
+    user_utterances:
+        - "I want to cancel a hotel reservation under number XY45678."
+        - "I need to go to a funeral."
+
+- conversation:
+    flows:
+        - cancel_hotel
+    user_utterances:
+        - "I found a more suitable accommodation for my needs, so I'd like to cancel my hotel stay."
+        - "Reservation number GH91234."
+
+# List hotels ----------------------------------------------------------------------
+
+- conversation:
+    flows:
+        - list_available_hotels
+    user_utterances:
+        - "Can you show me hotels in New York?"
+        - "I'm looking for a luxury suite."
+
+- conversation:
+    flows:
+        - list_available_hotels
+    user_utterances:
+        - "I need to find a hotel room in Paris."
+
+- conversation:
+    flows:
+        - list_available_hotels
+    user_utterances:
+        - "What hotels are available in Tokyo?"
+
+# List booked hotel accommodations --------------------------------------------------
+
+- conversation:
+    flows:
+        - list_booked_hotel_accommodations
+    user_utterances:
+        - "Can you show me all my booked hotel accommodations?"
+
+- conversation:
+    flows:
+        - list_booked_hotel_accommodations
+    user_utterances:
+        - "I'd like to see a list of my hotel bookings."
+
+- conversation:
+    flows:
+        - list_booked_hotel_accommodations
+    user_utterances:
+        - "My hotel reservations?"
+
+# Show hotel review -----------------------------------------------------------------
+
+- conversation:
+    flows:
+        - show_hotel_review
+    user_utterances:
+        - "Can you show me reviews for the hotel I booked in Paris?"
+
+- conversation:
+    flows:
+        - show_hotel_review
+    user_utterances:
+        - "I'd like to read the reviews for my upcoming hotel stay in Tokyo."
+
+- conversation:
+    flows:
+        - show_hotel_review
+    user_utterances:
+        - "What are people saying about the hotel 'Ocean View Retreat'?"

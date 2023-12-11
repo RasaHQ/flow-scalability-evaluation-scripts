@@ -1,0 +1,13 @@
+flows:
+  filter_train_trips:
+    description: Filtering train departures based on specific criteria.
+    name: filter train departures
+    steps:
+      - collect: train_departure_location
+        description: departure location (city, bus station)
+      - collect: train_departure_time
+        description: arrival location (city, bus station)
+      - collect: train_departure_date
+        description: the date when the bus should departure and start the trip
+      - collect: train_arrival_date
+        description: the date when the bus finish the trip

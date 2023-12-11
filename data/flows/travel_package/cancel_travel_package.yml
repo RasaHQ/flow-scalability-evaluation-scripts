@@ -1,0 +1,10 @@
+flows:
+  cancel_travel_package:
+    description: The user wants to cancel his travel package, i.e. hotel plus transport method.
+    name: cancel a travel package
+    steps:
+      - collect: order_number
+        description: the order number of the travel package
+      - collect: cancellation_reason
+        description: the reason of the cancellation
+      - link: process_refund

@@ -1,0 +1,105 @@
+# Buy a train ticket conversations ----------------------------------------------------
+
+- conversation:
+    flows:
+        - book_train_ticket
+    user_utterances:
+        - "I want to book a train ticket."
+        - "Departing from Washington DC."
+        - "On September 13th."
+        - "Somewhere around 5 AM."
+        - "I need to go to New York."
+        - "In first class, please."
+
+- conversation:
+    flows:
+        - book_train_ticket
+    user_utterances:
+        - "Can you book an ICE to Bremen on Thursday?"
+        - "From Berlin"
+        - "At 8AM."
+        - "First-class if available."
+
+- conversation:
+    flows:
+        - book_train_ticket
+    user_utterances:
+        - "I need to book a second class train seat to Potsdam for April 1st."
+        - "From Munich."
+        - "Around 2pm."
+
+- conversation:
+    flows:
+        - book_train_ticket
+    user_utterances:
+        - "Book a train ticket for tomorrow from Novi Sad to Belgrade."
+        - "17:00."
+        - "Economy class."
+
+- conversation:
+    flows:
+        - book_train_ticket
+    user_utterances:
+        - "I need a train to Potsdam for tomorrow morning?"
+
+# Filter train trips ------------------------------------------------------------------
+
+- conversation:
+    flows:
+        - filter_train_trips
+    user_utterances:
+        - "How much does a train from Berlin to Hamburg on Saturday cost?"
+
+- conversation:
+    flows:
+        - filter_train_trips
+    user_utterances:
+        - "Are there any trains from Subotica to Novi Sad on Monday?"
+
+- conversation:
+    flows:
+        - filter_train_trips
+    user_utterances:
+        - "List me all train trips from London to Cambridge"
+
+# Cancel train ticket ------------------------------------------------------------------
+
+- conversation:
+    flows:
+        - cancel_train_ticket
+    user_utterances:
+        - "I want to cancel the train trip and get a refund."
+        - "Ticket number ABC5677."
+        - "I'm sick, I can't make it."
+
+- conversation:
+    flows:
+        - cancel_train_ticket
+    user_utterances:
+        - "I go an unexpected appointment tomorrow and will not be able to fetch the train. Please cancel it."
+
+- conversation:
+    flows:
+        - cancel_train_ticket
+    user_utterances:
+        - "I'm sick. I'm not able to catch the train tomorrow."
+
+# List bought train tickets -----------------------------------------------------------
+
+- conversation:
+    flows:
+        - list_booked_train_tickets
+    user_utterances:
+        - "List all the train tickets I previously bought"
+
+- conversation:
+    flows:
+        - list_booked_train_tickets
+    user_utterances:
+        - "Show me my previous train trips"
+
+- conversation:
+    flows:
+        - list_booked_train_tickets
+    user_utterances:
+        - "I want to see all of my previous train trips."

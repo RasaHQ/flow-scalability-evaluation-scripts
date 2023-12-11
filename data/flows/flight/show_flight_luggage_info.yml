@@ -1,0 +1,11 @@
+flows:
+  show_flight_luggage_info:
+    description: |
+      Detailed information about luggage capacity, including limitations, fees, and 
+      policies for both carry-on and checked luggage.
+    name: show flight luggage info
+    steps:
+      - collect: flight_company
+        description: the flying company user is flying with
+      - collect: flight_departure_location
+        description: departure city or airport for the flight.

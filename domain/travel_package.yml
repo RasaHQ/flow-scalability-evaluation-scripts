@@ -1,0 +1,57 @@
+version: "3.1"
+
+slots:
+  travel_package_departure:
+    type: text
+  travel_package_arrival:
+    type: text
+  travel_package_start_date:
+    type: any
+  travel_package_end_date:
+    type: any
+  travel_package_preferred_transport_method:
+    type: categorical
+    values:
+      - flight
+      - bus
+      - train
+      - car
+  travel_package_update:
+    type: categorical
+    values:
+      - hotel
+      - transport method
+      - start date
+      - end date
+
+responses:
+  utter_ask_travel_package_start_date:
+    - text: "What date do you want to leave?"
+  utter_ask_travel_package_end_date:
+    - text: "What date do you want to come back?"
+  utter_ask_travel_package_departure:
+    - text: "What city do you departure from?"
+  utter_ask_travel_package_arrival:
+    - text: "What city do you want to go to?"
+  utter_ask_travel_package_preferred_transport_method:
+    - text: "What transport method do you prefer?"
+      buttons:
+        - payload: "flight"
+          title: flight
+        - payload: "bus"
+          title: bus
+        - payload: "train"
+          title: train
+        - payload: "car"
+          title: car
+  utter_ask_travel_package_update:
+    - text: "What do you want to change?"
+      buttons:
+        - payload: "hotel"
+          title: hotel
+        - payload: "transport_method"
+          title: transport method
+        - payload: "start_date"
+          title: start date
+        - payload: "end_date"
+          title: end date

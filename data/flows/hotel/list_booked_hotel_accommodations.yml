@@ -1,0 +1,7 @@
+flows:
+  list_booked_hotel_accommodations:
+    description: |
+      List all accommodations user booked at hotels.
+    name: list booked hotel accommodations
+    steps:
+      - action: utter_list_booked_hotel_accommodations

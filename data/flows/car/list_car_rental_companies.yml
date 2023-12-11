@@ -1,0 +1,7 @@
+flows:
+  list_car_rental_companies:
+    description: list all available car rental companies
+    name: list car rental companies
+    steps:
+      - collect: car_rental_pick_up_location
+        description: a location of a car rental company

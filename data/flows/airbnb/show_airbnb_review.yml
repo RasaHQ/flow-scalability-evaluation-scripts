@@ -1,0 +1,8 @@
+flows:
+  show_airbnb_review:
+    description: Reviews and ratings for a specific airbnb listing.
+    name: show airbnb review
+    steps:
+      - collect: airbnb_property
+        description: The property listed on airbnb.
+      - action: utter_show_airbnb_review

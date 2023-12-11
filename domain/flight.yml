@@ -1,0 +1,70 @@
+version: "3.1"
+
+slots:
+  flight_departure_location:
+    type: text
+  flight_destination_location:
+    type: text
+  flight_departure_date:
+    type: any
+  flight_return_date:
+    type: any
+  flight_class:
+    type: categorical
+    values:
+      - economy
+      - business
+      - first-class
+  flight_direct_trip:
+    type: bool
+  flight_round_trip:
+    type: bool
+  flight_company:
+    type: text
+  book_flight_confirmation:
+    type: bool
+
+
+responses:
+  utter_ask_flight_company:
+    - text: "What flight company are you traveling with?"
+  utter_ask_flight_departure_location:
+    - text: "Where do you want to departure from?"
+  utter_ask_flight_destination_location:
+    - text: "What city do you want to go to?"
+  utter_ask_flight_departure_date:
+    - text: "What date do you want to departure?"
+  utter_ask_flight_return_date:
+    - text: "What date do you want to return?"
+  utter_ask_flight_class:
+    - text: "What class do you prefer?"
+      buttons:
+        - payload: "economy"
+          title: economy
+        - payload: "business"
+          title: business
+        - payload: "first_class"
+          title: first-class
+  utter_ask_flight_direct_trip:
+    - text: "Do you want a direct flight?"
+      buttons:
+        - payload: "yes"
+          title: yes
+        - payload: "no"
+          title: no
+  utter_ask_flight_round_trip:
+    - text: "Do you want a book a round trip?"
+      buttons:
+        - payload: "yes"
+          title: yes
+        - payload: "no"
+          title: no
+  utter_ask_book_flight_confirmation:
+    - text: "Do you want to book the flight?"
+      buttons:
+        - payload: "yes"
+          title: yes
+        - payload: "no"
+          title: no
+  utter_list_flights:
+    - text: "Here are your fligths:"

@@ -1,0 +1,13 @@
+version: "3.1"
+
+slots:
+  order_number:
+    type: text
+  cancellation_reason:
+    type: text
+
+responses:
+  utter_ask_order_number:
+    - text: "What's the order number?"
+  utter_ask_cancellation_reason:
+    - text: "What's the reason behind cancellation?"

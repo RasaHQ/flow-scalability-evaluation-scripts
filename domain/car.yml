@@ -1,0 +1,79 @@
+version: "3.1"
+
+slots:
+  car_rental_pick_up_location:
+    type: text
+  car_rental_start_date:
+    type: any
+  car_rental_end_date:
+    type: any
+  car_rental_car_type:
+    type: categorical
+    values:
+      - small
+      - medium
+      - large
+      - SUV
+      - van
+      - luxury
+      - commercial
+  car_rental_driver:
+    type: text
+  car_rental_company:
+    type: text
+  car_rental_update:
+    type: categorical
+    values:
+      - pick up location
+      - car type
+      - start date
+      - end date
+  confirm_change:
+    type: bool
+
+responses:
+  utter_ask_car_rental_pick_up_location:
+    - text: "Where do you want to pick up your car?"
+  utter_ask_car_rental_start_date:
+    - text: "When do you want to pick up the car?"
+  utter_ask_car_rental_end_date:
+    - text: "What date do you want to return it?"
+  utter_ask_car_rental_driver:
+    - text: "What is the drivers name?"
+  utter_ask_car_rental_car_type:
+    - text: "What car type do you prefer?"
+      buttons:
+        - payload: "small"
+          title: small
+        - payload: "medium"
+          title: medium
+        - payload: "large"
+          title: large
+        - payload: "SUV"
+          title: SUV
+        - payload: "van"
+          title: van
+        - payload: "luxury"
+          title: luxury
+        - payload: "commercial"
+          title: commercial
+  utter_ask_car_rental_company:
+    - text: "What is the name of the rent-a-car company?"
+
+  utter_ask_car_rental_update:
+    - text: "What do you want to change?"
+      buttons:
+        - payload: "pick_up_location"
+          title: pick up location
+        - payload: "car_type"
+          title: car type
+        - payload: "start_date"
+          title: start date
+        - payload: "end_date"
+          title: end date
+
+  utter_list_car_rental_bookings:
+    - text: "Here are your car rentals:"
+
+  utter_show_airbnb_review:
+    - text: "Here is a review for airbnb"

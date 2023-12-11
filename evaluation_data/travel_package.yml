@@ -1,0 +1,106 @@
+- conversation:
+    flows:
+        - book_a_travel_package
+    user_utterances:
+        - "I need to go to Paris this weekend. Can you please book a trip?"
+        - "I'm departing from New York."
+        - "I'd prefer to fly."
+        - "I need to return by Sunday evening."
+
+- conversation:
+    flows:
+        - book_a_travel_package
+    user_utterances:
+        - "Can you book me a flight plus hotel from July 4th to July 10th to Amsterdam, please?"
+        - "Leaving from London."
+        - "Flight is my preferred method."
+
+- conversation:
+    flows:
+        - book_a_travel_package
+    user_utterances:
+        - "I need a travel package."
+        - "From Munich to Berlin."
+        - "Planning to start on August 15th."
+        - "Returning on August 22nd."
+        - "Bus travel is fine with me."
+
+- conversation:
+    flows:
+        - book_a_travel_package
+    user_utterances:
+        - "I want to book a complete trip including flight and hotel."
+        - "Starting from Chicago."
+        - "Destination is Washington."
+        - "From September 9th to September 16th."
+
+- conversation:
+    flows:
+        - book_a_travel_package
+    user_utterances:
+        - "Arrange a package for me to visit Rome, please."
+        - "I'll be leaving from Los Angeles."
+        - "I prefer to travel by train, if possible."
+        - "The trip should be from October 5th to October 12th."
+
+# Cancel travel package -------------------------------------------------------------
+
+- conversation:
+    flows:
+        - cancel_travel_package
+    user_utterances:
+        - "I need to cancel my travel package this Saturday."
+
+- conversation:
+    flows:
+        - cancel_travel_package
+    user_utterances:
+        - "I got sick, will not be able to get on my travel on Monday."
+
+- conversation:
+    flows:
+        - cancel_travel_package
+    user_utterances:
+        - "Cancel my travel package with order number 'ABCDE'."
+
+# Change travel package -------------------------------------------------------------
+
+- conversation:
+    flows:
+        - change_travel_package
+    user_utterances:
+        - "Update my travel package to Amsterdam please."
+        - "Order number is 123ABC."
+        - "I'd like to switch to a hotel closer to the city center."
+
+- conversation:
+    flows:
+        - change_travel_package
+    user_utterances:
+        - "I want a different hotel for my trip next weekend. I have heard some bad reviews about the place I should stay in."
+        - "The booking reference is 456DEF."
+        - "Please find a hotel with better ratings."
+
+- conversation:
+    flows:
+        - change_travel_package
+    user_utterances:
+        - "I need to come back one day earlier than planned. Can you change my travel package please."
+        - "My order number is 789GHI."
+        - "Adjust my return flight and hotel checkout date."
+
+- conversation:
+    flows:
+        - change_travel_package
+    user_utterances:
+        - "Change the departure date of my London trip."
+        - "Order number 321JKL."
+        - "Move it to one week later due to a scheduling conflict."
+
+- conversation:
+    flows:
+        - change_travel_package
+    user_utterances:
+        - "Can you upgrade my room type for my stay in Paris?"
+        - "The order number is 654MNO."
+        - "I'd prefer a suite or a room with a better view."

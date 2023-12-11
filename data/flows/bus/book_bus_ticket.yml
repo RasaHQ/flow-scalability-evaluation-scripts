@@ -1,0 +1,19 @@
+flows:
+  book_bus_ticket:
+    description: Book a bus ticket for intercity travel.
+    name: book bus ticket
+    steps:
+      - collect: bus_departure_location
+        description: departure location (city, bus station)
+
+      - collect: bus_departure_date
+        description: the date when the bus should departure
+
+      - collect: bus_departure_time
+        description: the time when the bus should departure
+
+      - collect: bus_arrival_location
+        description: arrival location (city, bus station)
+
+      - collect: book_bus_ticket_confirmation
+        ask_before_filling: true

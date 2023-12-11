@@ -1,0 +1,27 @@
+flows:
+  book_airbnb:
+    description: |
+      Booking of various types of accommodations via Airbnb.
+    name: book airbnb
+    steps:
+      - collect: airbnb_location
+        description: Desired location of the Airbnb stay.
+
+      - collect: airbnb_property_type
+        description: Type of property.
+
+      - collect: airbnb_check_in_date
+        description: Check-in date for the stay.
+
+      - collect: airbnb_check_out_date
+        description: Check-out date to define the duration of the stay.
+
+      - collect: airbnb_number_of_guests
+        description: Number of guests for the booking.
+
+      - collect: airbnb_property
+        description: | 
+          The property listed on airbnb that is selected from the available criteria.
+
+      - collect: airbnb_booking_confirmation
+        description: Confirm all details and finalize the Airbnb booking.

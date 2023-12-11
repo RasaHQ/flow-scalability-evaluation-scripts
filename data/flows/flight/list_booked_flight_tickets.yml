@@ -1,0 +1,7 @@
+flows:
+  list_booked_flight_tickets:
+    description: |
+      List all flight tickets user has booked.
+    name: list booked flight tickets
+    steps:
+      - action: utter_list_flights

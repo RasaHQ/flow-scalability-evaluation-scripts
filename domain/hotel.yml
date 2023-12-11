@@ -1,0 +1,50 @@
+version: "3.1"
+
+slots:
+  hotel_name:
+    type: text
+  hotel_location:
+    type: text
+  hotel_check_in_date:
+    type: any
+  hotel_check_out_date:
+    type: any
+  hotel_accommodation_type:
+    type: categorical
+    values:
+      - room
+      - apartment
+  hotel_number_of_people_staying:
+    type: float
+  book_hotel_confirmation:
+    type: bool
+
+responses:
+  utter_ask_hotel_name:
+    - text: "What is the name of the hotel?"
+  utter_ask_hotel_check_in_date:
+    - text: "When do you want to check in?"
+  utter_ask_hotel_check_out_date:
+    - text: "When do you want to check out?"
+  utter_ask_hotel_accommodation_type:
+    - text: "What accommodation type do you prefer?"
+      buttons:
+        - payload: "room"
+          title: room
+        - payload: "apartment"
+          title: apartment
+  utter_ask_hotel_number_of_people_staying:
+    - text: "How many people are staying at the hotel?"
+  utter_ask_book_hotel_confirmation:
+    - text: "Do you want to book the hotel?"
+      buttons:
+        - payload: "yes"
+          title: yes
+        - payload: "no"
+          title: no
+
+  utter_list_booked_hotel_accommodations:
+    - text: "Here are your hotel bookings:"
+
+  utter_list_hotels:
+    - text: "Here are available hotels:"

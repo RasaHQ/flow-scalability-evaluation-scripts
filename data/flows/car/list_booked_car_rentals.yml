@@ -1,0 +1,6 @@
+flows:
+  list_booked_car_rentals:
+    name: list booked car rentals
+    description: show all car rental bookings user has made along with their status
+    steps:
+      - action: utter_list_car_rental_bookings

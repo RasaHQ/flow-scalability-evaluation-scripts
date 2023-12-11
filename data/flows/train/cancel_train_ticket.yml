@@ -1,0 +1,11 @@
+flows:
+  cancel_train_ticket:
+    description: |
+      Cancel and refund a booked train ticket by verifying users ticket number.
+    name: cancel train ticket
+    steps:
+      - collect: order_number
+        description: the order number of the booked train ticket
+      - collect: cancellation_reason
+        description: the reason of the cancellation
+      - link: process_refund

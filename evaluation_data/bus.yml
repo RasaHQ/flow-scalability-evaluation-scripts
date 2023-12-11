@@ -1,0 +1,103 @@
+# Buy a bus ticket conversations ----------------------------------------------------
+
+- conversation:
+    flows:
+        - book_bus_ticket
+    user_utterances:
+        - "I want to buy a bus ticket"
+        - "Departing from Boston."
+        - "On September 5th."
+        - "Somewhere around 5 AM"
+        - "I need to go to Salem."
+
+- conversation:
+    flows:
+        - book_bus_ticket
+    user_utterances:
+        - "Please help me get a bus ticket from Seattle to Portland."
+        - "Planning to leave on July 15th."
+        - "8AM"
+
+
+- conversation:
+    flows:
+        - book_bus_ticket
+    user_utterances:
+        - "I need to book a bus ticket to Potsdam for April 1st."
+        - "Around noon."
+        - "To Munich."
+
+- conversation:
+    flows:
+        - book_bus_ticket
+    user_utterances:
+        - "Buy a bus ticket for tomorrow from Novi Sad to Belgrade"
+        - "17:00"
+
+- conversation:
+    flows:
+        - book_bus_ticket
+    user_utterances:
+        - "I need a bus to Potsdam. Can you book me a ticket?"
+
+# Filter bus trips ------------------------------------------------------------------
+
+- conversation:
+    flows:
+        - filter_bus_trips
+    user_utterances:
+        - "How much does a bus from Berlin to Hamburg on Saturday cost?"
+
+- conversation:
+    flows:
+        - filter_bus_trips
+    user_utterances:
+        - "Are there any buses from Subotica to Novi Sad on Monday?"
+
+- conversation:
+    flows:
+        - filter_bus_trips
+    user_utterances:
+        - "List me all bus trips from London to Cambridge"
+
+# Cancel bus ticket ------------------------------------------------------------------
+
+- conversation:
+    flows:
+        - cancel_bus_ticket
+    user_utterances:
+        - "I want to cancel the bus trip and get a refund."
+        - "Ticket number ABC123."
+        - "I have a flu, I can't make it."
+
+- conversation:
+    flows:
+        - cancel_bus_ticket
+    user_utterances:
+        - "Cancel my bus trip to London please."
+
+- conversation:
+    flows:
+        - cancel_bus_ticket
+    user_utterances:
+        - "I'm sick. I'm not able to pick the bus tomorrow."
+
+# List bought bus tickets -----------------------------------------------------------
+
+- conversation:
+    flows:
+        - list_booked_bus_tickets
+    user_utterances:
+        - "List all the bus tickets I previously bought"
+
+- conversation:
+    flows:
+        - list_booked_bus_tickets
+    user_utterances:
+        - "Show me my previous bus trips"
+
+- conversation:
+    flows:
+        - list_booked_bus_tickets
+    user_utterances:
+        - "I want to see all of my previous bus trips."

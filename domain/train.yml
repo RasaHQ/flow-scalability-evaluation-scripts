@@ -1,0 +1,36 @@
+version: "3.1"
+
+slots:
+  train_departure_date:
+    type: any
+  train_departure_time:
+    type: any
+  train_departure_location:
+    type: text
+  train_arrival_date:
+    type: any
+  train_arrival_location:
+    type: text
+  train_class:
+    type: categorical
+    values:
+      - first class
+      - second class
+
+responses:
+  utter_list_bought_train_tickets:
+    - text: "Here are your previous train trips:"
+
+  utter_ask_train_departure_date:
+    - text: "What date do you want to leave?"
+  utter_ask_train_departure_location:
+    - text: "What city do you departure from?"
+  utter_ask_train_arrival_location:
+    - text: "What city do you want to go to?"
+  utter_ask_train_class:
+    - text: "What travel class do you prefer?"
+      buttons:
+        - payload: "first_class"
+          title: first class
+        - payload: "second_class"
+          title: second class

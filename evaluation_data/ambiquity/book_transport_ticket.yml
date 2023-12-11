@@ -1,0 +1,23 @@
+- conversation:
+    flows:
+      - book_bus_ticket
+      - book_flight_ticket
+      - book_train_ticket
+    user_utterances:
+      - "I need to book a ticket to Paris for my trip next month."
+
+- conversation:
+    flows:
+      - book_bus_ticket
+      - book_flight_ticket
+      - book_train_ticket
+    user_utterances:
+      - "Can you help me with travel arrangements to Berlin? I'm looking for the most convenient option."
+
+- conversation:
+    flows:
+      - book_bus_ticket
+      - book_flight_ticket
+      - book_train_ticket
+    user_utterances:
+      - "I'm planning a journey to London and need to book transportation. What are my options?"

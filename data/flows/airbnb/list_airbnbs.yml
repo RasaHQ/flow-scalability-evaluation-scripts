@@ -1,0 +1,11 @@
+flows:
+  list_available_airbnbs:
+    description: |
+      List available airbnb for booking based on specified location and preferences.
+    name: list available airbnbs
+    steps:
+      - collect: airbnb_location
+        description: desired location to find airbnb in that area.
+      - collect: airbnb_property_type
+        description: desired property type of airbnb.
+      - action: utter_list_airbnbs

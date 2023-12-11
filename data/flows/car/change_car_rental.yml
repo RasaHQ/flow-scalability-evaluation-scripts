@@ -1,0 +1,9 @@
+flows:
+  change_car_rental:
+    description: The user wants to update his car rental order.
+    name: change car rental
+    steps:
+      - collect: order_number
+        description: the order number of the booked car rental
+      - collect: car_rental_update
+        description: collects what the user actually wants to update

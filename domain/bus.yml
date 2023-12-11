@@ -1,0 +1,29 @@
+version: "3.1"
+
+slots:
+  bus_departure_date:
+    type: any
+  bus_departure_time:
+    type: any
+  bus_departure_location:
+    type: text
+  bus_arrival_date:
+    type: any
+  bus_arrival_location:
+    type: text
+  book_bus_ticket_confirmation:
+    type: bool
+
+responses:
+  utter_bought_bus_tickets:
+    - text: "Here are your previous bus trips:"
+  utter_ask_bus_departure_location:
+    - text: "What city do you departure from?"
+  utter_ask_bus_departure_date:
+    - text: "What date do you want to leave?"
+  utter_ask_bus_departure_time:
+    - text: "At what time do you want to leave?"
+  utter_ask_bus_arrival_location:
+    - text: "What city do you want to go to?"
+  utter_ask_book_bus_ticket_confirmation:
+    - text: "Can you confirm you want to book this ticket?"

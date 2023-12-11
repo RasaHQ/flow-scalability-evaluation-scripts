@@ -1,0 +1,10 @@
+flows:
+  list_rental_vehicles:
+    description: |
+      list all available vehicles of a rent-a-car company in the specified location
+    name: list rental vehicles
+    steps:
+      - collect: car_rental_company
+        description: name of the car rental company
+      - collect: car_rental_pick_up_location
+        description: a location of a car rental company

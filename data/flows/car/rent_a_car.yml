@@ -1,0 +1,17 @@
+flows:
+  rent_a_car:
+    description: Rant a car from a specified location and time period.
+    name: rent a car
+    steps:
+      - collect: car_rental_pick_up_location
+        description: pick up location of the car rental
+      - collect: car_rental_company
+        description: name of the car rental company
+      - collect: car_rental_start_date
+        description: start date when to pick up the car
+      - collect: car_rental_end_date
+        description: end date when to return the car
+      - collect: car_rental_car_type
+        description: type of the car to rent
+      - collect: car_rental_driver
+        description: the drivers name

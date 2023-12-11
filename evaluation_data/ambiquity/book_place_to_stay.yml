@@ -1,0 +1,20 @@
+- conversation:
+    flows:
+      - book_hotel
+      - book_airbnb
+    user_utterances:
+      - "I'm looking for a nice place to stay during my trip to Rome next month."
+
+- conversation:
+    flows:
+      - book_hotel
+      - book_airbnb
+    user_utterances:
+      - "Can you help me find accommodation in Tokyo? I prefer something with a great city view."
+
+- conversation:
+    flows:
+      - book_hotel
+      - book_airbnb
+    user_utterances:
+      - "I need to book somewhere to stay in New York for a week, ideally close to the main attractions."

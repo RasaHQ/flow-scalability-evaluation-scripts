@@ -1,0 +1,7 @@
+flows:
+  list_booked_bus_tickets:
+    name: list booked bus tickets
+    description: |
+      List all bus tickets user has booked.
+    steps:
+      - action: utter_bought_bus_tickets

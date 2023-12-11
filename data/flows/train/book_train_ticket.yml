@@ -1,0 +1,15 @@
+flows:
+  book_train_ticket:
+    description: Book a train ticket to go from one city to another.
+    name: book train ticket
+    steps:
+      - collect: train_departure_location
+        description: the departure city of the train trip
+      - collect: train_departure_date
+        description: the time when the train should departure
+      - collect: train_departure_time
+        description: the date on when the train should departure
+      - collect: train_arrival_location
+        description: the arrival city of the train trip
+      - collect: train_class
+        description: the travel class of the train trip

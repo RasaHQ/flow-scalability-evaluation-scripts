@@ -1,0 +1,61 @@
+version: "3.1"
+
+slots:
+  airbnb_property:
+    type: text
+  airbnb_location:
+    type: text
+  airbnb_property_type:
+    type: categorical
+    values:
+      - apartment
+      - house
+  airbnb_check_in_date:
+    type: any
+  airbnb_check_out_date:
+    type: any
+  airbnb_number_of_guests:
+    type: float
+  airbnb_booking_confirmation:
+    type: bool
+
+responses:
+    utter_ask_airbnb_location:
+      - text: "What's your preferred location for the Airbnb stay?"
+
+    utter_ask_airbnb_property_type:
+      - text: "What type of private property are you looking for?"
+        buttons:
+          - payload: "apartment"
+            title: apartment
+          - payload: "house"
+            title: house
+
+    utter_ask_airbnb_check_in_date:
+      - text: "When do you want to check in?"
+
+    utter_ask_airbnb_check_out_date:
+      - text: "When do you want to check out?"
+
+    utter_ask_airbnb_number_of_guests:
+      - text: "How many guests will be staying in the Airbnb?"
+
+    utter_ask_airbnb_property:
+      - text: "Which listing are you looking for?"
+
+    utter_ask_airbnb_booking_confirmation:
+      - text: "Can you please confirm all the details? Once confirmed, I'll proceed with the booking."
+        buttons:
+          - payload: "yes"
+            title: yes
+          - payload: "no"
+            title: no
+
+    utter_list_airbnbs:
+      - text: "Here are available airbnbs:"
+
+    utter_list_booked_airbnb_accommodations:
+      - text: "Here are all the airbnb accommodations you've booked:"
+
+    utter_show_airbnb_review:
+      - text: "Here is a review for airbnb"

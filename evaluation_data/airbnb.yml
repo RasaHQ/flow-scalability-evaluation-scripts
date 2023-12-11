@@ -1,0 +1,132 @@
+# Book airbnb -----------------------------------------------------------------------
+
+- conversation:
+    flows:
+        - book_airbnb
+    user_utterances:
+        - "I'm looking to book an Airbnb in New York."
+        - "Preferably an entire apartment."
+        - "Check-in on May 10th."
+        - "Check-out on May 15th."
+        - "It's for two guests."
+
+- conversation:
+    flows:
+        - book_airbnb
+    user_utterances:
+        - "I need an Airbnb in Paris for next weekend."
+
+- conversation:
+    flows:
+        - book_airbnb
+    user_utterances:
+        - "Can I get a cozy cottage Airbnb in Kyoto for a solo trip?"
+        - "My dates are from July 20th to July 25th."
+
+- conversation:
+    flows:
+        - book_airbnb
+    user_utterances:
+        - "Book an Airbnb in London."
+        - "A studio apartment for one, please."
+        - "I'll be there from September 5th to September 12th."
+
+- conversation:
+    flows:
+        - book_airbnb
+    user_utterances:
+        - "Looking for a pet-friendly airbnb in Miami for me and my two dogs."
+        - "We'll be staying from October 3rd to October 9th."
+
+- conversation:
+    flows:
+        - book_airbnb
+    user_utterances:
+        - "I want to book a beachfront Airbnb in Sydney."
+        - "My travel dates are December 15th to December 20th."
+        - "It should accommodate at least 4 people."
+
+# Cancel airbnb ---------------------------------------------------------------------
+
+- conversation:
+    flows:
+        - cancel_airbnb
+    user_utterances:
+        - "I need to cancel my Airbnb booking."
+        - "The reservation number is AB12345."
+        - "My travel plans have changed unexpectedly."
+
+- conversation:
+    flows:
+        - cancel_airbnb
+    user_utterances:
+        - "I want to cancel an Airbnb reservation under number XY45678."
+        - "Due to a family emergency."
+
+- conversation:
+    flows:
+        - cancel_airbnb
+    user_utterances:
+        - "I found a more suitable accommodation for my needs, so I'd like to cancel to cancel my Airbnb stay."
+        - "GH91234"
+
+# List airbnb -----------------------------------------------------------------------
+
+- conversation:
+    flows:
+        - list_booked_airbnb_accommodations
+    user_utterances:
+        - "Can you show me Airbnb listings in New York?"
+        - "I'm looking for an entire apartment."
+
+- conversation:
+    flows:
+        - list_booked_airbnb_accommodations
+    user_utterances:
+        - "I need to find an Airbnb apartment in Paris."
+
+- conversation:
+    flows:
+        - list_booked_airbnb_accommodations
+    user_utterances:
+        - "What Airbnbs apartments with a unique styleare available in Tokyo?"
+
+# List booked airbnb accommodations -------------------------------------------------
+
+- conversation:
+    flows:
+        - list_booked_airbnb_accommodations
+    user_utterances:
+        - "Can you show me all my booked Airbnb accommodations?"
+
+- conversation:
+    flows:
+        - list_booked_airbnb_accommodations
+    user_utterances:
+        - "I'd like to see a list of my Airbnb bookings."
+
+- conversation:
+    flows:
+        - list_booked_airbnb_accommodations
+    user_utterances:
+        - "What are my current reservations on Airbnb?"
+
+# Show airbnb review ----------------------------------------------------------------
+
+- conversation:
+    flows:
+        - show_airbnb_review
+    user_utterances:
+        - "Can you show me reviews for the Airbnb I booked in Paris?"
+
+- conversation:
+    flows:
+        - show_airbnb_review
+    user_utterances:
+        - "I'd like to read the reviews for my upcoming Airbnb stay in Tokyo."
+
+- conversation:
+    flows:
+        - show_airbnb_review
+    user_utterances:
+        - "What are people saying about the Airbnb listing: Owl Bamboo House"

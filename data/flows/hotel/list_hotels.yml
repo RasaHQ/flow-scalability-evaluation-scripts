@@ -1,0 +1,10 @@
+flows:
+  list_available_hotels:
+    description: |
+      List available hotels for booking based on specified location and preferences.
+    name: list available hotels
+    steps:
+      - collect: hotel_location
+        description: desired location to find hotels in that area.
+      - collect: hotel_name
+        description: Name of the hotel.

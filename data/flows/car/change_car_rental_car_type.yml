@@ -1,0 +1,12 @@
+flows:
+  change_car_rental_car_type:
+    description: The user wants to change the car type he rent
+    name: change car rental car type
+    if: false
+    steps:
+      - collect: order_number
+        description: the order number of the booked car rental
+      - collect: car_rental_car_type
+        description: type of the car to rent
+      - collect: confirm_change
+        ask_before_filling: true

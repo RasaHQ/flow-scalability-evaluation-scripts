@@ -1,0 +1,9 @@
+flows:
+  show_car_rental_company_review:
+    description: Reviews and ratings for a specific car rental company.
+    name: show car rental company review
+    steps:
+      - collect: car_rental_company
+        description: Name of the car rental company.
+      - collect: car_rental_pick_up_location
+        description: The car rental location.
