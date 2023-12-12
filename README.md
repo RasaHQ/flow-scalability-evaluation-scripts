@@ -1,3 +1,11 @@
+# Terms of Use
+
+This project is currently under early release. For more information and the full 
+terms of use, please visit our 
+[Early Release Terms](https://rasa.com/early-release-software-terms/) page.
+
+---
+
 # Flow Scalability Evaluation Scripts
 
 ## Install dependencies
