@@ -6,10 +6,12 @@ import logging
 import random
 from typing import List, Dict
 
+from dotenv import load_dotenv
+
 import rasa.utils.log_utils
 from rasa.core.utils import AvailableEndpoints
 from rasa.model_training import train
-from rasa.core.agent import Agent, load_agent
+from rasa.core.agent import Agent
 from rasa.shared.core.trackers import DialogueStateTracker
 
 sys.path.append(os.getcwd())
@@ -58,6 +60,7 @@ def evaluate_flows_from_semantic_search(
 
 
 def run_and_evaluate():
+    load_dotenv()
     rasa.utils.log_utils.configure_structlog(logging.getLevelName("INFO"))
 
     # train the model
