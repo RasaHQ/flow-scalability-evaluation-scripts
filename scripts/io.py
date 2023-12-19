@@ -18,6 +18,8 @@ def extract_conversations() -> List[Tuple[List[str], List[str]]]:
                 file_path = os.path.join(root, filename)
                 with open(file_path, 'r') as file:
                     data = yaml.safe_load(file)
+                    if not data:
+                        continue
                     for conversation in data:
                         _conversation = conversation["conversation"]
                         conversations.append((_conversation["flows"], _conversation["user_utterances"]))
